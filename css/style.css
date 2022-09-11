@@ -31,11 +31,14 @@
   animation: jump 500ms ease-out;
 }
 
+.jump-cellphone {
+  animation: jump-cellphone 500ms ease-out;
+}
+
 .clouds {
-  top: 15vh;
+  
   position: absolute;
-  width: 550px;
-  animation: clouds-animation 20s infinite linear;
+ 
 }
 
 .game-over {
@@ -50,10 +53,9 @@
 
 .score {
   position: absolute;
-  top: 70px;
-  left: 50px;
+  
   font-family: 'Press Start 2P', cursive;
-  font-size: 40px;
+  
   color: rgb(255, 238, 0)
 }
 
@@ -102,6 +104,56 @@
 @keyframes game-over-mario {
   to {
     bottom: -200px;
+  }
+
+
+}
+
+@keyframes pipe-animation-cellphone {
+  from {
+    bottom: -80px;
+  } 
+  
+  to {
+    bottom: 100%;
+  }
+}
+
+@keyframes jump-cellphone {
+  0% {
+    left: 0;
+  }
+
+  40% {
+    left: 150px;
+  }
+
+  50% {
+    left: 150px;
+  }
+
+  60% {
+    left: 150px;
+  }
+
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes clouds-animation-cellphone {
+  from {
+    bottom: -200px;
+  }
+
+  to {
+    bottom: 100%;
+  }
+}
+
+@keyframes game-over-mario-cellphone {
+  to {
+    left: -200px;
   }
 
 
